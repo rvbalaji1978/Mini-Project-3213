@@ -1,59 +1,123 @@
-# School-ERP
-A School management system built using Django framework. It is designed for interactions between students and teachers. Features include attendance, marks and time table.
+# 🏫 School-ERP: A Django-Based School Management System
 
-## Installation
+School-ERP is a robust web application built using the **Django framework** designed to manage and facilitate interactions between students and teachers within an educational institution.
 
-Python and Django need to be installed
+## ✨ Key Features
 
-```bash
-pip install django
-```
+This system streamlines essential academic processes for students and teachers:
 
-## Usage
+* **Attendance Tracking:** Record and manage student attendance.
+* **Marks/Grades Management:** Input and view student marks and performance data.
+* **Timetable:** Access and manage class timetables.
 
-Go to the College-ERP folder and run
+---
 
-```bash
-python manage.py runserver
-```
+## 🚀 Installation
 
-Then go to the browser and enter the url **http://127.0.0.1:8000/**
+To set up the School-ERP project, you need **Python** and the **Django framework** installed on your system.
 
+### Prerequisites
 
-## Login
+* Python (3.x recommended)
+* Django
 
-The login page is common for students and teachers.  
-The username is their name and password for everyone is 'project123'.  
+### Installation Steps
 
-Example usernames:  
-Student- 'Rv Balaji Sai'  
-Teacher- 'B Sri Vaishnvai'  
+1.  **Clone the repository:**
+    ```bash
+    git clone [Your Repository URL]
+    cd School-ERP
+    ```
+2.  **Install Django:**
+    Use `pip` to install the Django framework:
+    ```bash
+    pip install django
+    ```
+    *(Note: You might need to install other dependencies listed in a potential `requirements.txt` file, if present.)*
 
-You can access the django admin page at **http://127.0.0.1:8000/admin** and login with username 'admin' and the above password.
+---
 
-Also a new admin user can be created using
+## 💻 Usage
 
-```bash
+To start the local development server:
+
+1.  Navigate into the main project directory (`College-ERP` in this context, assuming your project folder is named as such):
+    ```bash
+    cd College-ERP
+    ```
+2.  Run the Django development server:
+    ```bash
+    python manage.py runserver
+    ```
+
+### Accessing the System
+
+Once the server is running, open your web browser and navigate to the following URL:
+**[http://127.0.0.1:8000/](http://127.0.0.1:8000/)**
+
+---
+
+## 🔒 Login Details
+
+The system features a common login page for both students and teachers.
+
+| User Type | Username Format | Default Password |
+| :--- | :--- | :--- |
+| **Student** | Their full name (e.g., `'Rv Balaji Sai'`) | `'project123'` |
+| **Teacher** | Their full name (e.g., `'B Sri Vaishnvai'`) | `'project123'` |
+
+### Administrator Login (Django Admin)
+
+The **Django Admin** interface allows for system configuration and database management.
+
+* **URL:** **[http://127.0.0.1:8000/admin](http://127.0.0.1:8000/admin)**
+* **Default Credentials:**
+    * **Username:** `'admin'`
+    * **Password:** `'project123'`
+
+#### Creating a Superuser
+
+To create a new administrator account (superuser), run the following command and follow the prompts:
+
+```bash`
 python manage.py createsuperuser
-```
 
-## Users
+## 👥 User & System Management
 
-New students and teachers can be added through the admin page. A new user needs to be created for each. 
+All core system data, including user accounts, is managed via the **Django Admin page**.
 
-The admin page is used to modify all tables such as Students, Teachers, Departments, Courses, Classes etc.
+### Managing Users
 
-**For more details regarding the system and features please refer the reports included.**
+* New **Students** and **Teachers** must be added through the admin interface.
+* A separate user account needs to be created for each new entry.
 
-## Update (29/11/2025)
+### Managing Data Tables
 
-Added method to reset attendance time range in Django Admin page.
+The admin page provides the interface to modify and manage all critical system tables, including:
 
-![alt_text](https://i.imgur.com/0xOWmUZ.png)
+* **Students**
+* **Teachers**
+* **Departments**
+* **Courses**
+* **Classes**
+* *and more...*
 
-This is present in Django Admin -> Attendance (http://127.0.0.1:8000/admin/info/attendanceclass/).  
-Start Date: Start Date of Attendance period  
-End Date: End Date of Attendance period
+---
 
-This will delete all present attendance data and create new attendance objects for the given time range. 
+## 🔄 Update: Attendance Time Range Reset (29/11/2025)
 
+A new method has been added to the Django Admin page to reset the attendance period.
+
+### Functionality
+
+This feature allows the administrator to define a new **Start Date** and **End Date** for the attendance period. Executing this action will:
+
+1.  **Delete** all currently existing attendance data.
+2.  **Create** new attendance objects corresponding to the newly specified time range.
+
+### Location
+
+You can access this function in the Django Admin interface here:
+
+> **Django Admin -> Attendance**
+> **[http://127.0.0.1:8000/admin/info/attendanceclass/](http://127.0.0.1:8000/admin/info/attendanceclass/)**
