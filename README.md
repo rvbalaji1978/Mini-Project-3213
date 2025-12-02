@@ -1,8 +1,8 @@
-# 🏫 School-ERP: A Django-Based School Management System
+#  School-ERP: A Django-Based School Management System
 
 School-ERP is a robust web application built using the **Django framework** designed to manage and facilitate interactions between students and teachers within an educational institution.
 
-## ✨ Key Features
+## Key Features
 
 This system streamlines essential academic processes for students and teachers:
 
@@ -12,7 +12,7 @@ This system streamlines essential academic processes for students and teachers:
 
 ---
 
-## 🚀 Installation
+##  Installation
 
 To set up the School-ERP project, you need **Python** and the **Django framework** installed on your system.
 
@@ -37,7 +37,7 @@ To set up the School-ERP project, you need **Python** and the **Django framework
 
 ---
 
-## 💻 Usage
+##  Usage
 
 To start the local development server:
 
@@ -57,7 +57,7 @@ Once the server is running, open your web browser and navigate to the following 
 
 ---
 
-## 🔒 Login Details
+##  Login Details
 
 The system features a common login page for both students and teachers.
 
@@ -79,10 +79,11 @@ The **Django Admin** interface allows for system configuration and database mana
 
 To create a new administrator account (superuser), run the following command and follow the prompts:
 
-```bash`
+```bash
 python manage.py createsuperuser
+```
 
-## 👥 User & System Management
+##  User & System Management
 
 All core system data, including user accounts, is managed via the **Django Admin page**.
 
@@ -104,7 +105,7 @@ The admin page provides the interface to modify and manage all critical system t
 
 ---
 
-## 🔄 Update: Attendance Time Range Reset (29/11/2025)
+##  Update: Attendance Time Range Reset (29/11/2025)
 
 A new method has been added to the Django Admin page to reset the attendance period.
 
